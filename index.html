@@ -8,25 +8,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LinPrim: Linear Primitives for Differentiable Volumetric Rendering</title>
 
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
+  <!-- Main Bulma CSS -->
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+
+  <!-- Font Awesome (CDN version for reliability) -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Academicons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- Custom CSS (Adjust or remove if not needed) -->
   <link rel="stylesheet" href="./static/css/index.css">
+
+  <!-- Favicon -->
   <link rel="icon" href="./static/images/favicon.svg">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
+  <!-- Font Awesome local (remove if using CDN or if file doesn't exist) -->
+  <!-- <script defer src="./static/js/fontawesome.all.min.js"></script> -->
+
+  <!-- Remove these if not using them -->
+  <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+
+  <!-- Custom JS (Adjust or remove if not needed) -->
   <script src="./static/js/index.js"></script>
 </head>
 
 <body>
-
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -37,43 +48,33 @@
     </div>
   </nav>
 
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">LinPrim: Linear Primitives for Differentiable Volumetric Rendering
+            <h1 class="title is-1 publication-title">
+              LinPrim: Linear Primitives for Differentiable Volumetric Rendering
             </h1>
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- PDF Link. -->
-                <span class="link-block"></span>
-                <a href="https://arxiv.org/pdf/2501.16312" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
+            <div class="buttons is-centered">
+              <a href="https://arxiv.org/pdf/2501.16312" class="button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
                 </span>
-                <span class="link-block"></span>
-                <a href="https://arxiv.org/abs/2501.16312" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
+                <span>Paper</span>
+              </a>
+              <a href="https://arxiv.org/abs/2501.16312" class="button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
                 </span>
-                <!-- Video Link. -->
-                <span class="link-block">
-                  <a href="https://youtu.be/P2yeHwmGaeM" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Video</span>
-                  </a>
+                <span>arXiv</span>
+              </a>
+              <a href="https://youtu.be/P2yeHwmGaeM" class="button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-youtube"></i>
                 </span>
-              </div>
+                <span>Video</span>
+              </a>
             </div>
           </div>
         </div>
@@ -82,20 +83,20 @@
 
   <section class="section">
     <div class="container is-max-desktop">
-
-      <!-- Paper video. -->
+      <!-- Paper video -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Video</h2>
           <div class="publication-video">
             <iframe src="https://www.youtube.com/embed/P2yeHwmGaeM?si=x5VkqieJLKkWU0mv&amp;showinfo=0" frameborder="0"
-              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
           </div>
         </div>
       </div>
-      <!--/ Paper video. -->
+      <!--/ Paper video -->
 
-      <!-- Abstract. -->
+      <!-- Abstract -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
@@ -122,10 +123,9 @@
           </div>
         </div>
       </div>
-      <!--/ Abstract. -->
+      <!--/ Abstract -->
     </div>
   </section>
-
 
   <footer class="footer">
     <div class="container">
@@ -133,20 +133,20 @@
         <div class="column is-8">
           <div class="content">
             <p>
-              This website is licensed under a <a rel="license"
-                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-                Commons Attribution-ShareAlike 4.0 International License</a>.
+              This website is licensed under a
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                Creative Commons Attribution-ShareAlike 4.0 International License
+              </a>.
             </p>
             <p>
-              This code was borrowed from the <a href="https://github.com/nerfies/nerfies.github.io">nerfies
-                webpage</a>.
+              This code was borrowed from the
+              <a href="https://github.com/nerfies/nerfies.github.io">nerfies webpage</a>.
             </p>
           </div>
         </div>
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
