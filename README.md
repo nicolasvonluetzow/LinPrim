@@ -1,6 +1,6 @@
 # LinPrim
 
-This repository hosts the project webpage for the [LinPrim Website](https://nicolasvonluetzow.github.io/LinPrim/).
+This repository contains the source code for the [LinPrim website](https://nicolasvonluetzow.github.io/LinPrim/).
 
 ## Code
 We will release the code soon!
