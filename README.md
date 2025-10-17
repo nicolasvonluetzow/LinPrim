@@ -3,7 +3,7 @@
 This repository contains the source code for the [LinPrim website](https://nicolasvonluetzow.github.io/LinPrim/).
 
 ## Code
-We will release the code soon!
+The code is available under https://github.com/nicolasvonluetzow/linear-splatting.
 
 ## BibTeX
 If you find LinPrim useful please consider citing:
