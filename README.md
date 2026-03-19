@@ -8,10 +8,10 @@ The code is available under https://github.com/nicolasvonluetzow/linear-splattin
 ## BibTeX
 If you find LinPrim useful please consider citing:
 ```
-@article{von2025linprim,
+@inproceedings{vonlinprim,
   title={LinPrim: Linear Primitives for Differentiable Volumetric Rendering},
   author={von L{\"u}tzow, Nicolas and Nie{\ss}ner, Matthias},
-  journal={arXiv preprint arXiv:2501.16312},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
   year={2025}
 }
 ```

@@ -24,16 +24,15 @@
   <link rel="stylesheet" href="./static/css/index.css">
 
   <!-- Favicon -->
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔺</text></svg>">
 
   <!-- Font Awesome local (remove if using CDN or if file doesn't exist) -->
   <!-- <script defer src="./static/js/fontawesome.all.min.js"></script> -->
 
-  <!-- Remove these if not using them -->
-  <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
-  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <!-- Custom JS (Adjust or remove if not needed) -->
+  <!-- Custom JS -->
   <script src="./static/js/index.js"></script>
 </head>
 
@@ -64,6 +63,9 @@
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">Technical University of Munich</span>
+          </div>
+          <div class="is-size-5 publication-venue">
+            <span>NeurIPS 2025</span>
           </div>
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -149,14 +151,133 @@
       <!--/ Abstract -->
     </div>
   </section>
+  <section class="section">
+  <div class="container">
+        <hr class="divider" />
+        <h2 class="title is-3 has-text-centered">Scene Representation</h2>
+
+        <div class="columns">
+            <!-- Bike -->
+            <div class="column is-half">
+                <div id="example7" class="bal-container-small small-bal-container">
+                    <div class="bal-wrapper">
+                        <div class="bal-after">
+                            <img src="imgs/bike.jpg" alt="Bike render">
+                            <div class="bal-afterPosition afterLabel">
+                                Render
+                            </div>
+                        </div>
+                        <div class="bal-before">
+                            <div class="bal-before-inset">
+                                <img src="imgs/bike_prims.png" alt="Bike primitives">
+                                <div class="bal-beforePosition beforeLabel">
+                                    Primitives
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bal-handle">
+                            <span class="handle-left-arrow"></span>
+                            <span class="handle-right-arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Table -->
+            <div class="column is-half">
+                <div id="example6" class="bal-container-small small-bal-container">
+                    <div class="bal-wrapper">
+                        <div class="bal-after">
+                            <img src="imgs/table.png" alt="Table render">
+                            <div class="bal-afterPosition afterLabel">
+                                Render
+                            </div>
+                        </div>
+                        <div class="bal-before">
+                            <div class="bal-before-inset">
+                                <img src="imgs/table_prims.png" alt="Table primitives">
+                                <div class="bal-beforePosition beforeLabel">
+                                    Primitives
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bal-handle">
+                            <span class="handle-left-arrow"></span>
+                            <span class="handle-right-arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="section">
+  <div class="container">
+        <hr class="divider" />
+        <h2 class="title is-3 has-text-centered">Visuals</h2>
+
+        <div class="columns">
+            <!-- Example 2 -->
+            <div class="column is-half">
+                <div id="example4" class="bal-container-small small-bal-container">
+                    <div class="bal-wrapper">
+                        <div class="bal-after">
+                            <img src="imgs/39f_3dgs_00009.png" alt="Example 2 After">
+                            <div class="bal-afterPosition afterLabel">
+                                3D Gaussian Splatting
+                            </div>
+                        </div>
+                        <div class="bal-before">
+                            <div class="bal-before-inset">
+                                <img src="imgs/39f_linprim_00009.png" alt="Example 2 Before">
+                                <div class="bal-beforePosition beforeLabel">
+                                    LinPrim (Ours)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bal-handle">
+                            <span class="handle-left-arrow"></span>
+                            <span class="handle-right-arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Example 3 -->
+            <div class="column is-half">
+                <div id="example5" class="bal-container-small small-bal-container">
+                    <div class="bal-wrapper">
+                        <div class="bal-after">
+                            <img src="imgs/flowers_linprim_00009.png" alt="Example 3 After">
+                            <div class="bal-afterPosition afterLabel">
+                                LinPrim (Ours)
+                            </div>
+                        </div>
+                        <div class="bal-before">
+                            <div class="bal-before-inset">
+                                <img src="imgs/flowers_gt_00009.png" alt="Example 3 Before">
+                                <div class="bal-beforePosition beforeLabel">
+                                    Ground Truth
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bal-handle">
+                            <span class="handle-left-arrow"></span>
+                            <span class="handle-right-arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{von2025linprim,
+      <pre><code>@inproceedings{vonlinprim,
   title={LinPrim: Linear Primitives for Differentiable Volumetric Rendering},
   author={von L{\"u}tzow, Nicolas and Nie{\ss}ner, Matthias},
-  journal={arXiv preprint arXiv:2501.16312},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
   year={2025}
 }</code></pre>
     </div>
@@ -174,7 +295,7 @@
               </a>.
             </p>
             <p>
-              This code was borrowed from the
+              The code was borrowed from the
               <a href="https://github.com/nerfies/nerfies.github.io">nerfies webpage</a>.
             </p>
           </div>
