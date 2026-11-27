@@ -49,11 +49,6 @@ function initBeforeAfterSlider(containerId) {
 }
 
 $(document).ready(function() {
-    $(".navbar-burger").click(function() {
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
-    });
-
     initBeforeAfterSlider('example4');
     initBeforeAfterSlider('example5');
     initBeforeAfterSlider('example6');
